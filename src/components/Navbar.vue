@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <router-link to="/"><img src="../assets/image.png" id="hatLogo"></router-link>
-    <h1 id="companyName"> Injur </h1>
+    <h1 id="companyName"> </h1>
     <div class="header-right">
       <div class="dropdown">
         <template v-if="user.loggedIn">
@@ -82,7 +82,7 @@ export default {
 
   }
   #hatLogo {
-    width: 6em;
+    width: 14em;
     height: 6em;
   }
   #companyName {

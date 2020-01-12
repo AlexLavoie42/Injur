@@ -54,7 +54,7 @@
         width: 20em;
         float: right;
         position: absolute;
-        left: 70em;
+        left: 70%;
         font-weight: bold;
         font-family: 'Open Sans', sans-serif;
 
@@ -67,7 +67,7 @@
         width: 20em;
         float: right;
         position: absolute;
-        left: 70em;
+        left: 70%;
         font-weight: bold;
         font-family: 'Open Sans', sans-serif;
     }
