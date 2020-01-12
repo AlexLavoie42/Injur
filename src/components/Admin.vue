@@ -17,7 +17,7 @@
                 <img class="image" src="https://dummyimage.com/50x50/000/fff" alt="dummy image">
             </div>
             <div class ="leftLabelText">
-                employees
+                Employees
             </div>
 
             <div class ="button">
@@ -58,7 +58,7 @@
 
     #left {
         font-size: 25px;
-        background-color: darkcyan;
+        background-color: #61afe0;
         position: relative;
         padding-top: 15px;
         padding-left: 15px;
