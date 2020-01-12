@@ -58,7 +58,7 @@
 
             submit () {
                 const data = {
-                    injuredPersons: this.injuredPersons
+                    basicInfo: this.basicInfo
                 }
                 alert(JSON.stringify(data, null, 2))
             }
