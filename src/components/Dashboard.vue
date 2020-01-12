@@ -1,16 +1,5 @@
 <template>
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="card">
-          <div class="card-header">Dashboard</div>
-
-          <div class="card-body">
-            <div v-if="user" class="alert alert-success" role="alert">You are logged in!</div>
-          </div>
-        </div>
-      </div>
-    </div>
     <button class="button" style="vertical-align:middle"><span>Submit an Incident </span></button>
 
     <button class="button" style="vertical-align:middle"><span>Submit a Tip</span></button>
