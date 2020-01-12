@@ -22,6 +22,14 @@
                     v-model="form.name"
                   />
                 </div>
+
+                <label for="name" class="col-md-4 col-form-label text-md-right">Account Type</label>
+                <div class="col-md-6">
+                  <select v-model="form.type">
+                    <option value="employee">Employee</option>
+                    <option value="manager">Manager</option>
+                  </select>
+                </div>
               </div>
 
               <div class="form-group row">
@@ -79,6 +87,7 @@ export default {
       form: {
         name: "",
         email: "",
+        type: "",
         password: ""
       },
       error: null
@@ -92,7 +101,8 @@ export default {
         .then(data => {
           data.user
             .updateProfile({
-              displayName: this.form.name
+              displayName: this.form.name,
+              accountType: this.form.type
             })
             .then(() => {});
         })

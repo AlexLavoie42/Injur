@@ -7,6 +7,7 @@
 
           <div class="card-body">
             <div v-if="user" class="alert alert-success" role="alert">You are logged in!</div>
+            <h4>{{user.data.accountType}}</h4>
           </div>
         </div>
       </div>
