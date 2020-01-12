@@ -38,9 +38,8 @@
                 };
                 db.collection("tips").add(data)
                     .then(function () {
-                        alert("Safety tip sent")
+                        this.$router.replace("ThankYou")
                     });
-                this.$router.replace("Dashboard")
             }
         }
     }

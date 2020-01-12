@@ -13,6 +13,7 @@ import EmployeeForm_Adv5 from "../components/EmployeeForm_Adv5";
 import EmployeeForm_InjType6 from "../components/EmployeeForm_InjType6";
 import Tip from "../components/Tip";
 import IncidentList from "../components/IncidentList";
+import ThankyouMessage from "../components/ThankyouMessage";
 
 Vue.use(Router)
 
@@ -96,6 +97,11 @@ const router = new Router({
             // meta: {
             //     requiresAuth: true
             // }
+        },
+        {
+            path: "/thankyou",
+            name: "ThankYou",
+            component: ThankyouMessage
         }
 ]
 });
