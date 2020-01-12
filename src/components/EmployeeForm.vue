@@ -88,6 +88,8 @@
 </template>
 <script>
 
+    import {db} from "../main";
+
     export default {
         name: "App",
 
@@ -132,8 +134,12 @@
             submit () {
                 const data = {
                     injuredPersons: this.injuredPersons
-                }
-                alert(JSON.stringify(data, null, 2))
+                };
+                db.collection("reports").add(data)
+                    .then(function () {
+                        alert("Report sent")
+                    });
+                this.$router.replace("Dashboard")
             }
         }
     };
