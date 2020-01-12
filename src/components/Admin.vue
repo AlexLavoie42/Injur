@@ -63,6 +63,7 @@
         padding-top: 15px;
         padding-left: 15px;
         padding-right: 15px;
+        margin: 1em;
         width: 30%;
         height: 690px;
     }
@@ -72,16 +73,16 @@
         position: relative;
         margin-bottom: 0px;
         padding-top: 18px;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 1em;
+        padding-right: 1em;
         padding-bottom: 30px;
-        width: 75%;
+        width: 75px;
         height: 20px;
         cursor: pointer;
     }
 
     .image {
-        margin-left: 5%;
+        margin-left: .5em;
         position: relative;
         float: left;
         top: -10px;
