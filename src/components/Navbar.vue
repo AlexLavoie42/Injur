@@ -2,7 +2,6 @@
   <div class="header">
     <router-link to="/"><img src="../assets/hat.png" id="hatLogo"></router-link>
     <h1 id="companyName"> BCIT Construction Co. </h1>
-    <img src="../assets/bell.png" id="bell" alt="">
     <div class="header-right">
       <div class="dropdown">
         <template v-if="user.loggedIn">
@@ -10,12 +9,10 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <router-link to="dashboard">Account</router-link>
             <router-link to="reports">Incidents</router-link>
             <a @click.prevent="signOut">Sign Out</a>
           </div>
         </template>
-
       </div>
     </div>
   </div>

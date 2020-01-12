@@ -15,6 +15,7 @@ import Tip from "../components/Tip";
 import IncidentList from "../components/IncidentList";
 import ThankyouMessage from "../components/ThankyouMessage";
 import ManagerView from "../components/ManagerView";
+import store from "../store";
 
 Vue.use(Router)
 
@@ -37,8 +38,8 @@ const router = new Router({
             component: Register
         },
         {
-            path: '/manager',
-            name: 'Manager',
+            path: '/ManagerView',
+            name: 'ManagerView',
             component: ManagerView,
             meta: {
                 requiresAuth: true
@@ -119,7 +120,8 @@ router.beforeEach((to, from, next) => {
     let currentUser = firebase.auth().currentUser
     let requiresAuth = to.matched.some(record => record.meta.requiresAuth)
 
-    if (requiresAuth && !currentUser) next('login')
+    if (requiresAuth && !currentUser) next('login');
+    else if(store.getters.userType === "manager" && to.name === "Dashboard") next('ManagerView')
     else next()
 })
 export default router
