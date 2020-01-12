@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <router-link to="/"><img src="../assets/logo.png" id="hatLogo"></router-link>
+    <router-link to="/"><img src="../assets/image.png" id="hatLogo"></router-link>
     <h1 id="companyName"> Injur </h1>
     <div class="header-right">
       <div class="dropdown">
