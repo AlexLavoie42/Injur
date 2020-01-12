@@ -1,51 +1,54 @@
-<template>
+<template xmlns="http://www.w3.org/1999/html">
+    <main class="main">
+        <section class="section2"
+        <div id = "left">
+            <div class ="button">
+                <img class="image" src="https://static.thenounproject.com/png/186484-200.png" alt="dummy image">
+
+                <div class ="leftLabelText">
+                    Employees
+                </div>
+            </div>
+
+            <div class ="button">
+                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
+
+                <div class ="leftLabelText">
+                    Account
+                </div>
+            </div>
+
+            <div class ="button">
+                <img class="image" src="http://cdn.onlinewebfonts.com/svg/img_474609.png" alt="dummy image">
+
+                <div class ="leftLabelText">
+                    Customization
+                </div>
+            </div>
+
+            <div class ="button">
+                <img class="image" src="https://cdn0.iconfinder.com/data/icons/entypo/92/help-512.png" alt="dummy image">
+
+                <div class ="leftLabelText">
+                    Help
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+        <section class="section">
     <div id ="container">
 
         <div class="search-container">
             <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit" class ="searchButton"></button>
+                <input type="text" placeholder="Search.." name="search" class="input">
             </form>
         </div>
 
-        <div class ="filter">
-            filter
-        </div>
-
-        <div id = "left">
-            <div class ="button">
-                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
-
-            <div class ="leftLabelText">
-                Employees
-            </div>
-            </div>
-
-            <div class ="button">
-                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
-
-            <div class ="leftLabelText">
-                Account
-            </div>
-            </div>
-
-            <div class ="button">
-                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
-
-            <div class ="leftLabelText">
-                Customization
-            </div>
-            </div>
-
-            <div class ="button">
-                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
-
-            <div class ="leftLabelText">
-                Employees
-            </div>
-            </div>
-        </div>
     </div>
+        </section>
+
+    </main>
 </template>
 
 <script>
@@ -65,26 +68,26 @@
         background-color: #61afe0;
         position: relative;
         padding-top: 15px;
+        padding-bottom: 55px;
 
 
         margin: .5em;
         width: 30%;
-        height: 690px;
+        height: 100%;
     }
 
     .button {
         background-color: azure;
         position: relative;
-
         cursor: pointer;
     }
 
     .image {
-        margin-left: .5em;
+        margin-left: .25em;
         position: relative;
         float: left;
-        top: -10px;
-        left: -20px;
+        top: 25px;
+        left: -15px;
         width: 4em;
         height: 4em;
     }
@@ -92,12 +95,13 @@
     .leftLabelText {
         position: relative;
         top: -50px;
-        left: 35%;
-        width: 50%;
+        left: 4.5em;
+        width: 5em;
         cursor: pointer;
         text-align: center;
         color: black;
         font-family: 'Open Sans', sans-serif
+
     }
 
     #bar {
@@ -111,8 +115,8 @@
     }
 
     .search-container {
-        float: right;
-        padding: 25px;
+        float: center;
+
     }
 
     .filter {
@@ -145,5 +149,16 @@
         width: 20px;
         height: 20px;
     }
+.main {
+    display:flex;
 
+}
+    .section {
+
+    }
+    .input {
+        width: 63em;
+        margin: 1em;
+
+    }
 </style>
