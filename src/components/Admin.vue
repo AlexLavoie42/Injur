@@ -38,6 +38,10 @@
         </section>
         <section class="section">
             <button class="button2">Add User</button>
+            <button class="button2">Remove User</button>
+            <button class="button2">Filter</button>
+
+
     <div id ="container">
 
         <div class="search-container">
@@ -164,9 +168,9 @@
     }
     .button2 {
         position: relative;
-        background-color: #4CAF50;
+        background-color: #61afe0;
         border: none;
-        font-size: 28px;
+        font-size: 26px;
         color: #FFFFFF;
         padding: 20px;
         width: 200px;
@@ -176,11 +180,13 @@
         text-decoration: none;
         overflow: hidden;
         cursor: pointer;
+        margin-left: .6em;
+
     }
 
     .button2:after {
         content: "";
-        background: #90EE90;
+        background: azure;
         display: block;
         position: absolute;
         padding-top: 300%;
