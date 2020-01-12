@@ -100,7 +100,7 @@ export default {
   },
   methods: {
     submit() {
-      db.collection(this.form.email).add({type: this.form.type});
+      db.collection(this.form.email).doc("type").set({type: this.form.type});
       firebase
         .auth()
         .createUserWithEmailAndPassword(this.form.email, this.form.password)

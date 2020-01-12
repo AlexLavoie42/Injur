@@ -12,6 +12,7 @@ import EmployeeForm_Basic3 from "../components/EmployeeForm_Basic3";
 import EmployeeForm_IncType4 from "../components/EmployeeForm_IncType4";
 import EmployeeForm_Adv5 from "../components/EmployeeForm_Adv5";
 import EmployeeForm_InjType6 from "../components/EmployeeForm_InjType6";
+import {db} from "../main";
 
 Vue.use(Router)
 
