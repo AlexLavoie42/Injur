@@ -49,6 +49,14 @@
                 <input type="text" placeholder="Search.." name="search" class="input">
             </form>
         </div>
+        <button class="button"><span>Robert Hemsworth rhw@gmail.com </span></button>
+        <button class="button"><span>Bradley Evans bbevs@worksafebc.com </span></button>
+        <button class="button"><span>Chris Cumberbatch cucumberb@gmail.com </span></button>
+        <button class="button"><span>Mark Pratt markpratt@bcit.ca </span></button>
+        <button class="button"><span>Scarlett Olsen scolsen@gmail.ca </span></button>
+        <button class="button"><span>Hugh Reynolds hgreylonds@my.bcit.ca </span></button>
+        <button class="button"><span>Ryan Jackman ryanjman@bcit.ca </span></button>
+
 
     </div>
         </section>
@@ -202,5 +210,35 @@
         margin: 0;
         opacity: 1;
         transition: 0s
+    }
+    .button3 {
+        background-color: #618fe0;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .button3 span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+
+    .button3 span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+
+    .button3:hover span {
+        padding-right: 25px;
+    }
+
+    .button3:hover span:after {
+        opacity: 1;
+        right: 0;
     }
 </style>
