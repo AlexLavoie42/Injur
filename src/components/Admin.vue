@@ -38,8 +38,8 @@
 
         <section class="section">
             <router-link to="register"><button class="button2">Add User</button></router-link>
-            <button class="button2">Remove User</button>
-            <button class="button2">Filter</button>
+            <button class="button2"disabled>Remove User</button>
+            <button class="button2"disabled>Filter</button>
 
 
     <div id ="container">
