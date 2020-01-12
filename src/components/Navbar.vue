@@ -10,7 +10,7 @@
           </button>
           <div class="dropdown-content">
             <router-link to="admin" v-if="user.data.userType === 'manager'">Admin</router-link>
-            <router-link to="admin" v-if="user.data.userType === 'manager'">Analytics</router-link>
+            <router-link to="myanalytics" v-if="user.data.userType === 'manager'">Analytics</router-link>
             <router-link to="reports" v-if="user.data.userType === 'manager'">Incidents</router-link>
             <a @click.prevent="signOut">Sign Out</a>
           </div>
