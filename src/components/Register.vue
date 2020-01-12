@@ -84,6 +84,7 @@
 
 <script>
 import firebase from "firebase";
+import {db} from "../main";
 
 export default {
   data() {
@@ -99,6 +100,7 @@ export default {
   },
   methods: {
     submit() {
+      db.collection(this.form.email).add({type: this.form.type});
       firebase
         .auth()
         .createUserWithEmailAndPassword(this.form.email, this.form.password)
