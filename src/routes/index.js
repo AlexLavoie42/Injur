@@ -17,6 +17,7 @@ import ThankyouMessage from "../components/ThankyouMessage";
 import ManagerView from "../components/ManagerView";
 import store from "../store";
 import LoggedIn from "../components/LoggedIn";
+import MyAnalytics from "../components/MyAnalytics";
 
 Vue.use(Router)
 
@@ -115,9 +116,9 @@ const router = new Router({
             component: ThankyouMessage
         },
         {
-            path: "/LoggedIn",
-            name: "LoggedIn",
-            component: LoggedIn
+            path: "/MyAnalytics",
+            name: "MyAnalytics",
+            component: MyAnalytics
         }
 ]
 });
