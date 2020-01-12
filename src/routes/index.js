@@ -3,6 +3,9 @@ import Router from 'vue-router';
 import Login from '../components/Login'
 import Register from '../components/Register'
 import Dashboard from '../components/Dashboard'
+import Reports from "../components/Reports";
+import firebase from 'firebase'
+import Admin from "../components/Admin";
 
 Vue.use(Router)
 
@@ -10,6 +13,10 @@ const router = new Router({
     mode: 'history',
     base: process.env.BASE_URL,
     routes: [
+        {
+            path: "/",
+            redirect: "/dashboard"
+        },
         {
         path: '/login',
         name: 'login',
@@ -23,9 +30,28 @@ const router = new Router({
     {
         path: '/dashboard',
         name: 'Dashboard',
-        component: Dashboard
-    }
+        component: Dashboard,
+        meta: {
+            requiresAuth: true
+        }
+    },
+        {
+            path: "/reports",
+            name: "Reports",
+            component: Reports
+        },
+        {
+            path: "/admin",
+            name: "Admin",
+            component: Admin
+        }
 ]
 });
+router.beforeEach((to, from, next) => {
+    let currentUser = firebase.auth().currentUser
+    let requiresAuth = to.matched.some(record => record.meta.requiresAuth)
 
+    if (requiresAuth && !currentUser) next('login')
+    else next()
+})
 export default router
