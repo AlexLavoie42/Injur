@@ -23,6 +23,7 @@
         margin: 40px;
         font-size: 60px;
         text-align: center;
+        font-family: 'Open Sans', sans-serif;
     }
 
     .button {
@@ -38,6 +39,7 @@
         cursor: pointer;
         margin-left: 40%;
         width: 20%;
+        font-family: 'Open Sans', sans-serif;
     }
 
 </style>
