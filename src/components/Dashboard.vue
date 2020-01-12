@@ -7,15 +7,14 @@
 
           <div class="card-body">
             <div v-if="user" class="alert alert-success" role="alert">You are logged in!</div>
-            <h4>{{user.data.accountType}}</h4>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <button class="button" style="vertical-align:middle"><span>Submit an Incident </span></button>
+    <button class="button" style="vertical-align:middle"><span>Submit an Incident </span></button>
 
-  <button class="button" style="vertical-align:middle"><span>Submit a Tip</span></button>
+    <button class="button" style="vertical-align:middle"><span>Submit a Tip</span></button>
+  </div>
 </template>
 
 <script>
