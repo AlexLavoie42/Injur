@@ -34,7 +34,6 @@
                   </select>
                 </div>
               </div>
-              <h4>{{form.type}}</h4>
 
               <div class="form-group row">
                 <label for="email" class="col-md-4 col-form-label text-md-right">Email</label>
@@ -109,7 +108,9 @@ export default {
             .updateProfile({
               displayName: this.form.name
             })
-            .then(() => {});
+            .then(() => {
+              this.$router.replace("Dashboard")
+            });
         })
         .catch(err => {
           this.error = err.message;

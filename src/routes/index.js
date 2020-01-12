@@ -29,20 +29,20 @@ const router = new Router({
         path: '/login',
         name: 'login',
         component: Login
-    },
-    {
+        },
+        {
         path: '/register',
         name: 'Register',
         component: Register
-    },
-    {
+        },
+        {
         path: '/dashboard',
         name: 'Dashboard',
         component: Dashboard,
         meta: {
             requiresAuth: true
         }
-    },
+        },
         {
             path: "/admin",
             name: "Admin",

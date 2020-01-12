@@ -69,11 +69,8 @@
                 const data = {
                     injuredPersons: this.injuredPersons
                 };
-                db.collection("reports").add(data)
-                    .then(function () {
-                        alert("Report sent")
-                    });
-                this.$router.replace("Dashboard")
+                db.collection("reports").add(data);
+                this.$router.replace("ThankYou")
             }
         }
     };

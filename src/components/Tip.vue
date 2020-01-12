@@ -5,8 +5,8 @@
         </div>
 
         <form>
-            <textarea class ="field" type="text" name="Tip" placeholder="Enter a tip..."></textarea><br>
-            <input id ="submit" type="submit" value="Submit">
+            <textarea class="field" type="text" v-model="tip" placeholder="Enter a tip..."/>
+            <button @click="submit" id ="submit">Submit</button>
         </form>
     </div>
 </template>
@@ -36,10 +36,8 @@
                 const data = {
                     safetyTip: this.safetyTip
                 };
-                db.collection("tips").add(data)
-                    .then(function () {
-                        this.$router.replace("ThankYou")
-                    });
+                db.collection("tips").add(data);
+                this.$router.replace("ThankYou")
             }
         }
     }

@@ -3,13 +3,13 @@
         <div id ="message">
             Thank you for your input
         </div>
-        <button class="button">Continue</button>
+        <router-link to="Dashboard"><button class="button">Continue</button></router-link>
     </div>
 </template>
 
 <script>
     export default {
-        name: "ThankyouMessage"
+        name: "Thankyou"
     }
 </script>
 
