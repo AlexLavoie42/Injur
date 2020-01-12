@@ -9,7 +9,8 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <router-link to="reports">Incidents</router-link>
+            <router-link to="admin" v-if="user.data.userType === 'manager'">Admin</router-link>
+            <router-link to="reports" v-if="user.data.userType === 'manager'">Incidents</router-link>
             <a @click.prevent="signOut">Sign Out</a>
           </div>
         </template>

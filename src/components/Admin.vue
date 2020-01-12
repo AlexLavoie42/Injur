@@ -37,7 +37,7 @@
 
 
         <section class="section">
-            <button class="button2">Add User</button>
+            <router-link to="register"><button class="button2">Add User</button></router-link>
             <button class="button2">Remove User</button>
             <button class="button2">Filter</button>
 
