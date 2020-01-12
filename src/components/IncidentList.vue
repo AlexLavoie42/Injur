@@ -34,10 +34,10 @@
     .singleReport {
         background-color: #61afe0;
         display:flex;
-        margin-top: 2em;
+        padding: 2em;
         margin-bottom: 2em;
-        margin-left: 2em;
         margin-right: 2em;
+        margin-left: 2em;
         align-items: center;
     }
     h2 {
@@ -54,7 +54,7 @@
         width: 20em;
         float: right;
         position: absolute;
-        left: 90em;
+        left: 70em;
         font-weight: bold;
         font-family: 'Open Sans', sans-serif;
 
@@ -67,7 +67,7 @@
         width: 20em;
         float: right;
         position: absolute;
-        left: 90em;
+        left: 70em;
         font-weight: bold;
         font-family: 'Open Sans', sans-serif;
     }
