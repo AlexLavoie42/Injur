@@ -2,23 +2,23 @@
     <section id="reports">
         <article class="singleReport">
             <h2> Jonathan Raindrop </h2>
-            <button class="button2"<span> Pending </span></button>
+            <button class="button2"><span> Pending </span></button>
         </article>
         <article class="singleReport">
             <h2> Jamie Aquathrow </h2>
-            <button class="button2"<span> Pending </span></button>
+            <button class="button2"><span> Pending </span></button>
         </article>
         <article class="singleReport">
             <h2> Joshua Ehchtouoh </h2>
-            <button class="button3"<span> Completed </span></button>
+            <button class="button3"><span> Completed </span></button>
         </article>
         <article class="singleReport">
             <h2> Jimmy Waterkick </h2>
-            <button class="button3"<span> Completed </span></button>
+            <button class="button3"><span> Completed </span></button>
         </article>
         <article class="singleReport">
             <h2> Jackson Puddletrip </h2>
-            <button class="button3"<span> Completed </span></button>
+            <button class="button3"><span> Completed </span></button>
         </article>
     </section>
 </template>

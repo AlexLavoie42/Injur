@@ -3,7 +3,8 @@
     <router-link to="EmployeeForm"><button class="button" style="vertical-align:middle">
       <span>Submit an Incident </span></button></router-link>
 
-    <button class="button" style="vertical-align:middle"><span>Submit a Tip</span></button>
+    <router-link to="Tip"><button class="button" style="vertical-align:middle">
+      <span>Submit a Tip</span></button></router-link>
   </div>
 </template>
 
