@@ -5,6 +5,7 @@ import Register from '../components/Register'
 import Dashboard from '../components/Dashboard'
 import Reports from "../components/Reports";
 import firebase from 'firebase'
+import Admin from "../components/Admin";
 
 Vue.use(Router)
 
@@ -38,6 +39,11 @@ const router = new Router({
             path: "/reports",
             name: "Reports",
             component: Reports
+        },
+        {
+            path: "/admin",
+            name: "Admin",
+            component: Admin
         }
 ]
 });
