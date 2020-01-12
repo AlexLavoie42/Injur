@@ -70,7 +70,7 @@
                     injuredPersons: this.injuredPersons
                 };
                 db.collection("reports").add(data);
-                this.$router.replace("EmployeeForm_witness")
+                this.$router.replace("EmployeeForm_witnesses")
             }
         }
     };

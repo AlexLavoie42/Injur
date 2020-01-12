@@ -111,6 +111,14 @@ const router = new Router({
             // }
         },
         {
+            path: "/employeeform_inj",
+            name: "EmployeeForm_InjType6",
+            component: EmployeeForm_InjType6
+            // meta: {
+            //     requiresAuth: true
+            // }
+        },
+        {
             path: "/thankyou",
             name: "ThankYou",
             component: ThankyouMessage

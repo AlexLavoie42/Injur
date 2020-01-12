@@ -56,7 +56,7 @@
             <hr>
 
             <div class="form-group">
-                <button @click="submit" type="button" class="btn btn-primary">Next</button>
+                <button @click="submit" type="button" class="btn btn-primary">Submit Report</button>
             </div>
         </form>
     </div>
@@ -82,10 +82,10 @@
         methods: {
 
             submit () {
-                const data = {
-                    injuredPersons: this.injuredPersons
-                }
-                alert(JSON.stringify(data, null, 2))
+                // const data = {
+                //     injuredPersons: this.injuredPersons
+                // }
+                this.$router.replace("thankyou")
             }
         }
     };
