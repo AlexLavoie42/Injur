@@ -12,8 +12,37 @@
 </template>
 
 <script>
+    import {db} from "../main";
+
     export default {
-        name: "Tip"
+        name: "Tip",
+
+        data: () => ({
+            safetyTip: [
+                {
+                    tip: "",
+                },
+            ],
+        }),
+
+        methods: {
+            addPerson () {
+                this.safetyTip.push({
+                    tip: ''
+                })
+            },
+
+            submit () {
+                const data = {
+                    safetyTip: this.safetyTip
+                };
+                db.collection("tips").add(data)
+                    .then(function () {
+                        alert("Safety tip sent")
+                    });
+                this.$router.replace("Dashboard")
+            }
+        }
     }
 </script>
 
