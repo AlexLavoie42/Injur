@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import {db} from "./main";
 
 Vue.use(Vuex);
 
@@ -14,6 +15,9 @@ export default new Vuex.Store({
   getters: {
     user(state){
       return state.user
+    },
+    userType(state){
+      return state.user.data.userType
     }
   },
   mutations: {
@@ -27,11 +31,13 @@ export default new Vuex.Store({
   actions: {
     fetchUser({ commit }, user) {
       commit("SET_LOGGED_IN", user !== null);
-
       if (user) {
-        commit("SET_USER", {
-          displayName: user.displayName,
-          email: user.email
+        db.collection(user.email).doc("type").get().then(function (doc) {
+          commit("SET_USER", {
+            displayName: user.displayName,
+            email: user.email,
+            userType: doc.data()['type']
+          });
         });
       } else {
         commit("SET_USER", null);

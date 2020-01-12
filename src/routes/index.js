@@ -14,6 +14,7 @@ import EmployeeForm_InjType6 from "../components/EmployeeForm_InjType6";
 import Tip from "../components/Tip";
 import IncidentList from "../components/IncidentList";
 import ThankyouMessage from "../components/ThankyouMessage";
+import ManagerView from "../components/ManagerView";
 
 Vue.use(Router)
 
@@ -26,22 +27,30 @@ const router = new Router({
             redirect: "/dashboard"
         },
         {
-        path: '/login',
-        name: 'login',
-        component: Login
+            path: '/login',
+            name: 'login',
+            component: Login
         },
         {
-        path: '/register',
-        name: 'Register',
-        component: Register
+            path: '/register',
+            name: 'Register',
+            component: Register
         },
         {
-        path: '/dashboard',
-        name: 'Dashboard',
-        component: Dashboard,
-        meta: {
-            requiresAuth: true
-        }
+            path: '/manager',
+            name: 'Manager',
+            component: ManagerView,
+            meta: {
+                requiresAuth: true
+            }
+        },
+        {
+            path: '/dashboard',
+            name: 'Dashboard',
+            component: Dashboard,
+            meta: {
+                requiresAuth: true
+            }
         },
         {
             path: "/admin",
@@ -105,6 +114,7 @@ const router = new Router({
         }
 ]
 });
+
 router.beforeEach((to, from, next) => {
     let currentUser = firebase.auth().currentUser
     let requiresAuth = to.matched.some(record => record.meta.requiresAuth)
