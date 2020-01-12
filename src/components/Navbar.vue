@@ -15,11 +15,6 @@
             <a @click.prevent="signOut">Sign Out</a>
           </div>
         </template>
-        <template v-else>
-          <li class="nav-item">
-            <router-link to="login" class="nav-link">Login</router-link>
-          </li>
-        </template>
 
       </div>
     </div>
