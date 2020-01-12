@@ -72,7 +72,7 @@ export default {
         .signInWithEmailAndPassword(this.form.email, this.form.password)
         // eslint-disable-next-line no-unused-vars
         .then(data => {
-          this.$router.replace({ name: "Dashboard" });
+          this.$router.replace("Dashboard");
         })
         .catch(err => {
           this.error = err.message;

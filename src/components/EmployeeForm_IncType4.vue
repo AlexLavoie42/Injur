@@ -70,10 +70,11 @@
         methods: {
 
             submit () {
+                // eslint-disable-next-line no-unused-vars
                 const data = {
                     injuredPersons: this.injuredPersons
                 }
-                alert(JSON.stringify(data, null, 2))
+                this.$router.replace("EmployeeForm_Adv")
             }
         }
     };

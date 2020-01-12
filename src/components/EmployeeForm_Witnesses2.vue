@@ -100,11 +100,12 @@
             },
 
             submit () {
+                // eslint-disable-next-line no-unused-vars
                 const data = {
                     witness: this.witness,
                     person: this.person
                 }
-                alert(JSON.stringify(data, null, 2))
+                this.$router.replace("EmployeeForm_Basic")
             }
         }
     };

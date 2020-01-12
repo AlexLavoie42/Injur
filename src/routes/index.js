@@ -77,7 +77,7 @@ const router = new Router({
             // }
         },
         {
-            path: "/employeeform_witness",
+            path: "/employeeform_witnesses",
             name: "EmployeeForm_Witnesses2",
             component: EmployeeForm_Witnesses2
             // meta: {
@@ -93,7 +93,7 @@ const router = new Router({
             // }
         },
         {
-            path: "/employeeform_type",
+            path: "/employeeform_inctype",
             name: "EmployeeForm_IncType4",
             component: EmployeeForm_IncType4
             // meta: {
