@@ -9,7 +9,8 @@
 
     <router-link to="Reports"><button class="button" style="vertical-align:middle"><span>View Incidents</span></button></router-link>
 
-    <button class="button" style="vertical-align:middle"><span>View Tips</span></button>
+
+    <button class="button" style="vertical-align:middle"><span>View Analytics</span></button>
     </div>
 
 </template>
