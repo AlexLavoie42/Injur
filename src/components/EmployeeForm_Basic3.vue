@@ -64,7 +64,7 @@
                     basicInfo: this.basicInfo
                 }
                 db.collection("reports").add(data);
-                this.$router.replace("EmployeeForm_type")
+                this.$router.replace("EmployeeForm_inctype")
             }
         }
     };
