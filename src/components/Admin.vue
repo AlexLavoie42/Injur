@@ -1,4 +1,4 @@
-<template xmlns="http://www.w3.org/1999/html">
+<template>
     <main class="main">
         <section class="section2"></section>
         <div id = "left">
@@ -49,13 +49,13 @@
                 <input type="text" placeholder="Search.." name="search" class="input">
             </form>
         </div>
-        <button class="button"><span>Robert Hemsworth rhw@gmail.com </span></button>
-        <button class="button"><span>Bradley Evans bbevs@worksafebc.com </span></button>
-        <button class="button"><span>Chris Cumberbatch cucumberb@gmail.com </span></button>
-        <button class="button"><span>Mark Pratt markpratt@bcit.ca </span></button>
-        <button class="button"><span>Scarlett Olsen scolsen@gmail.ca </span></button>
-        <button class="button"><span>Hugh Reynolds hgreylonds@my.bcit.ca </span></button>
-        <button class="button"><span>Ryan Jackman ryanjman@bcit.ca </span></button>
+        <button class="button user"><span>Robert Hemsworth rhw@gmail.com </span></button>
+        <button class="button user"><span>Bradley Evans bbevs@worksafebc.com </span></button>
+        <button class="button user"><span>Chris Cumberbatch cucumberb@gmail.com </span></button>
+        <button class="button user"><span>Mark Pratt markpratt@bcit.ca </span></button>
+        <button class="button user"><span>Scarlett Olsen scolsen@gmail.ca </span></button>
+        <button class="button user"><span>Hugh Reynolds hgreylonds@my.bcit.ca </span></button>
+        <button class="button user"><span>Ryan Jackman ryanjman@bcit.ca </span></button>
 
 
     </div>
@@ -91,6 +91,12 @@
 
     .button {
         background-color: azure;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .user {
+        background-color: #61afe0;
         position: relative;
         cursor: pointer;
     }
