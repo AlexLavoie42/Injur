@@ -11,6 +11,7 @@ import EmployeeForm_Witnesses2 from "../components/EmployeeForm_Witnesses2";
 import EmployeeForm_Basic3 from "../components/EmployeeForm_Basic3";
 import EmployeeForm_IncType4 from "../components/EmployeeForm_IncType4";
 import EmployeeForm_Adv5 from "../components/EmployeeForm_Adv5";
+import EmployeeForm_InjType6 from "../components/EmployeeForm_InjType6";
 
 Vue.use(Router)
 
@@ -86,6 +87,14 @@ const router = new Router({
             path: "/employeeform_adv",
             name: "EmployeeForm_Adv5",
             component: EmployeeForm_Adv5
+            // meta: {
+            //     requiresAuth: true
+            // }
+        },
+        {
+            path: "/employeeform_inj",
+            name: "EmployeeForm_InjType6",
+            component: EmployeeForm_InjType6
             // meta: {
             //     requiresAuth: true
             // }
