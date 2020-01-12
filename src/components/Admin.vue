@@ -1,6 +1,6 @@
 <template xmlns="http://www.w3.org/1999/html">
     <main class="main">
-        <section class="section2"
+        <section class="section2"></section>
         <div id = "left">
             <div class ="button">
                 <img class="image" src="https://static.thenounproject.com/png/186484-200.png" alt="dummy image">
@@ -34,8 +34,8 @@
                 </div>
             </div>
         </div>
-        </div>
-        </section>
+
+
         <section class="section">
             <button class="button2">Add User</button>
             <button class="button2">Remove User</button>
