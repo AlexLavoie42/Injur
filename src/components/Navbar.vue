@@ -1,8 +1,7 @@
 <template>
   <div class="header">
-    <router-link to="/"><img src="../assets/hat.png" id="hatLogo"></router-link>
-    <h1 id="companyName"> BCIT Construction Co. </h1>
-    <img src="../assets/bell.png" id="bell" alt="">
+    <router-link to="/"><img src="../assets/image.png" id="hatLogo"></router-link>
+    <h1 id="companyName"> </h1>
     <div class="header-right">
       <div class="dropdown">
         <template v-if="user.loggedIn">
@@ -10,17 +9,11 @@
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="dropdown-content">
-            <router-link to="dashboard">Account</router-link>
-            <router-link to="reports">Incidents</router-link>
+            <router-link to="admin" v-if="user.data.userType === 'manager'">Admin</router-link>
+            <router-link to="reports" v-if="user.data.userType === 'manager'">Incidents</router-link>
             <a @click.prevent="signOut">Sign Out</a>
           </div>
         </template>
-        <template v-else>
-          <li class="nav-item">
-            <router-link to="login" class="nav-link">Login</router-link>
-          </li>
-        </template>
-
       </div>
     </div>
   </div>
@@ -43,7 +36,7 @@ export default {
         .signOut()
         .then(() => {
           this.$router.replace({
-            name: "home"
+            name: "login"
           });
         });
     }
@@ -90,14 +83,13 @@ export default {
 
   }
   #hatLogo {
-    width: 6em;
+    width: 14em;
     height: 6em;
   }
   #companyName {
     flex:2;
     font-size: 2.5em;
     text-align: center;
-
     margin-top: 0.575em;
     font-family: 'Open Sans', sans-serif;
   }
@@ -111,7 +103,6 @@ export default {
   .dropdown {
     flex:2;
     text-align: center;
-
     font-family: 'Open Sans', sans-serif
   }
 

@@ -3,7 +3,6 @@ import Router from 'vue-router';
 import Login from '../components/Login'
 import Register from '../components/Register'
 import Dashboard from '../components/Dashboard'
-//import Reports from "../components/Reports";
 import firebase from 'firebase'
 import Admin from "../components/Admin";
 import EmployeeForm from "../components/EmployeeForm";
@@ -12,11 +11,12 @@ import EmployeeForm_Basic3 from "../components/EmployeeForm_Basic3";
 import EmployeeForm_IncType4 from "../components/EmployeeForm_IncType4";
 import EmployeeForm_Adv5 from "../components/EmployeeForm_Adv5";
 import EmployeeForm_InjType6 from "../components/EmployeeForm_InjType6";
-import MyAnalytics from "../components/MyAnalytics";
 import Tip from "../components/Tip";
 import IncidentList from "../components/IncidentList";
 import ThankyouMessage from "../components/ThankyouMessage";
 import ManagerView from "../components/ManagerView";
+import store from "../store";
+import LoggedIn from "../components/LoggedIn";
 
 Vue.use(Router)
 
@@ -39,8 +39,8 @@ const router = new Router({
             component: Register
         },
         {
-            path: '/manager',
-            name: 'Manager',
+            path: '/ManagerView',
+            name: 'ManagerView',
             component: ManagerView,
             meta: {
                 requiresAuth: true
@@ -78,7 +78,7 @@ const router = new Router({
             // }
         },
         {
-            path: "/employeeform_witness:id",
+            path: "/employeeform_witnesses",
             name: "EmployeeForm_Witnesses2",
             component: EmployeeForm_Witnesses2
             // meta: {
@@ -94,7 +94,7 @@ const router = new Router({
             // }
         },
         {
-            path: "/employeeform_type",
+            path: "/employeeform_inctype",
             name: "EmployeeForm_IncType4",
             component: EmployeeForm_IncType4
             // meta: {
@@ -115,20 +115,9 @@ const router = new Router({
             component: ThankyouMessage
         },
         {
-            path: "/employeeform_inj",
-            name: "EmployeeForm_InjType6",
-            component: EmployeeForm_InjType6
-            // meta: {
-            //     requiresAuth: true
-            // }
-        },
-        {
-            path: "/myanalytics",
-            name: "MyAnalytics",
-            component: MyAnalytics
-            // meta: {
-            //     requiresAuth: true
-            // }
+            path: "/LoggedIn",
+            name: "LoggedIn",
+            component: LoggedIn
         }
 ]
 });
@@ -137,7 +126,8 @@ router.beforeEach((to, from, next) => {
     let currentUser = firebase.auth().currentUser
     let requiresAuth = to.matched.some(record => record.meta.requiresAuth)
 
-    if (requiresAuth && !currentUser) next('login')
+    if (requiresAuth && !currentUser) next('login');
+    else if(store.getters.userType === "manager" && to.name === "Dashboard") next('ManagerView')
     else next()
 })
 export default router

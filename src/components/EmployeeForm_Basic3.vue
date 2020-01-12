@@ -59,6 +59,7 @@
         methods: {
 
             submit () {
+                // eslint-disable-next-line no-unused-vars
                 const data = {
                     basicInfo: this.basicInfo
                 }

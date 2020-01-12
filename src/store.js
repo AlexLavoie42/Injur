@@ -17,7 +17,9 @@ export default new Vuex.Store({
       return state.user
     },
     userType(state){
-      return state.user.data.userType
+      if(state.user.data)
+        return state.user.data.userType
+      else return undefined
     }
   },
   mutations: {

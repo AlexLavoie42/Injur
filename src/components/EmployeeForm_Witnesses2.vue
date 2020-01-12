@@ -59,8 +59,6 @@
 </template>
 <script>
 
-    import {db} from "../main";
-
     export default {
         name: "App",
 
@@ -102,12 +100,12 @@
             },
 
             submit () {
+                // eslint-disable-next-line no-unused-vars
                 const data = {
                     witness: this.witness,
                     person: this.person
                 }
-                db.collection("reports").add(data);
-                this.$router.replace("EmployeeForm_basic")
+                this.$router.replace("EmployeeForm_Basic")
             }
         }
     };

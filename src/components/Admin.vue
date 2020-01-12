@@ -1,47 +1,59 @@
-<template>
+<template xmlns="http://www.w3.org/1999/html">
+    <main class="main">
+        <section class="section2"></section>
+        <div id = "left">
+            <div class ="button">
+                <img class="image" src="https://static.thenounproject.com/png/186484-200.png" alt="dummy image">
+
+                <div class ="leftLabelText">
+                    Employees
+                </div>
+            </div>
+
+            <div class ="button">
+                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
+
+                <div class ="leftLabelText">
+                    Account
+                </div>
+            </div>
+
+            <div class ="button">
+                <img class="image" src="http://cdn.onlinewebfonts.com/svg/img_474609.png" alt="dummy image">
+
+                <div class ="leftLabelText">
+                    Customization
+                </div>
+            </div>
+
+            <div class ="button">
+                <img class="image" src="https://cdn0.iconfinder.com/data/icons/entypo/92/help-512.png" alt="dummy image">
+
+                <div class ="leftLabelText">
+                    Help
+                </div>
+            </div>
+        </div>
+
+
+        <section class="section">
+            <router-link to="register"><button class="button2">Add User</button></router-link>
+            <button class="button2">Remove User</button>
+            <button class="button2">Filter</button>
+
+
     <div id ="container">
 
         <div class="search-container">
             <form action="/action_page.php">
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit" class ="searchButton"></button>
+                <input type="text" placeholder="Search.." name="search" class="input">
             </form>
         </div>
 
-        <div class ="filter">
-            filter
-        </div>
-
-        <div id = "left">
-            <div class ="button">
-                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
-            </div>
-            <div class ="leftLabelText">
-                Employees
-            </div>
-
-            <div class ="button">
-                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
-            </div>
-            <div class ="leftLabelText">
-                something1
-            </div>
-
-            <div class ="button">
-                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
-            </div>
-            <div class ="leftLabelText">
-                something2
-            </div>
-
-            <div class ="button">
-                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
-            </div>
-            <div class ="leftLabelText">
-                something3
-            </div>
-        </div>
     </div>
+        </section>
+
+    </main>
 </template>
 
 <script>
@@ -61,40 +73,40 @@
         background-color: #61afe0;
         position: relative;
         padding-top: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 1em;
+        padding-bottom: 55px;
+
+
+        margin: .5em;
         width: 30%;
-        height: 690px;
+        height: 100%;
     }
 
     .button {
         background-color: azure;
         position: relative;
-        margin-bottom: 0px;
-        padding-top: 18px;
-        padding-left: 1em;
-        padding-right: 1em;
-        padding-bottom: 30px;
-        width: 75px;
-        height: 20px;
         cursor: pointer;
     }
 
     .image {
-        margin-left: .5em;
+        margin-left: .25em;
         position: relative;
         float: left;
-        top: -10px;
-        left: -20px;
+        top: 25px;
+        left: -15px;
+        width: 4em;
+        height: 4em;
     }
 
     .leftLabelText {
         position: relative;
         top: -50px;
-        left: 35%;
-        width: 50%;
+        left: 4.5em;
+        width: 5em;
         cursor: pointer;
+        text-align: center;
+        color: black;
+        font-family: 'Open Sans', sans-serif
+
     }
 
     #bar {
@@ -108,8 +120,8 @@
     }
 
     .search-container {
-        float: right;
-        padding: 25px;
+        float: center;
+
     }
 
     .filter {
@@ -142,5 +154,53 @@
         width: 20px;
         height: 20px;
     }
+.main {
+    display:flex;
 
+}
+    .section {
+
+    }
+    .input {
+        width: 63em;
+        margin: 1em;
+
+    }
+    .button2 {
+        position: relative;
+        background-color: #61afe0;
+        border: none;
+        font-size: 26px;
+        color: #FFFFFF;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+        margin-left: .6em;
+
+    }
+
+    .button2:after {
+        content: "";
+        background: azure;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px!important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+    }
+
+    .button2:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+    }
 </style>

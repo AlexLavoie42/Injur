@@ -53,6 +53,7 @@
         methods: {
 
             submit () {
+                // eslint-disable-next-line no-unused-vars
                 const data = {
                     incidentInfo: this.incidentInfo
                 }

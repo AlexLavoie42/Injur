@@ -1,4 +1,5 @@
 <template>
+
     <div id ="container">
         <div id ="message">
             Thank you for your input
@@ -21,7 +22,7 @@
 
     #message {
         margin: 40px;
-        font-size: 60px;
+        font-size: 30px;
         text-align: center;
         font-family: 'Open Sans', sans-serif;
     }
@@ -35,10 +36,11 @@
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
-        margin-top: 100px;
+
         cursor: pointer;
         margin-left: 40%;
         width: 20%;
+        height:30%;
         font-family: 'Open Sans', sans-serif;
     }
 

@@ -1,12 +1,13 @@
 <template>
     <div class="container">
-        <router-link to="ManagerForm"><button class="button" style="vertical-align:middle">
+        <router-link to="EmployeeForm"><button class="button" style="vertical-align:middle">
             <span>Submit an Incident </span></button></router-link>
 
-        <button class="button" style="vertical-align:middle"><span>Account Administration</span></button>
+        <router-link to="Admin"><button class="button" style="vertical-align:middle"><span>
+            Account Administration</span></button></router-link>
 
 
-    <button class="button" style="vertical-align:middle"><span>View Incidents</span></button>
+    <router-link to="Reports"><button class="button" style="vertical-align:middle"><span>View Incidents</span></button></router-link>
 
     <button class="button" style="vertical-align:middle"><span>View Tips</span></button>
     </div>
