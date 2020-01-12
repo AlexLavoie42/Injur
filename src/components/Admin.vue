@@ -15,30 +15,34 @@
         <div id = "left">
             <div class ="button">
                 <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
-            </div>
+
             <div class ="leftLabelText">
                 Employees
             </div>
-
-            <div class ="button">
-                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
-            </div>
-            <div class ="leftLabelText">
-                something1
             </div>
 
             <div class ="button">
                 <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
-            </div>
+
             <div class ="leftLabelText">
-                something2
+                Account
+            </div>
             </div>
 
             <div class ="button">
                 <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
-            </div>
+
             <div class ="leftLabelText">
-                something3
+                Customization
+            </div>
+            </div>
+
+            <div class ="button">
+                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
+
+            <div class ="leftLabelText">
+                Employees
+            </div>
             </div>
         </div>
     </div>
@@ -61,9 +65,9 @@
         background-color: #61afe0;
         position: relative;
         padding-top: 15px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin: 1em;
+
+
+        margin: .5em;
         width: 30%;
         height: 690px;
     }
@@ -71,13 +75,7 @@
     .button {
         background-color: azure;
         position: relative;
-        margin-bottom: 0px;
-        padding-top: 18px;
-        padding-left: 1em;
-        padding-right: 1em;
-        padding-bottom: 30px;
-        width: 75px;
-        height: 20px;
+
         cursor: pointer;
     }
 
@@ -97,6 +95,9 @@
         left: 35%;
         width: 50%;
         cursor: pointer;
+        text-align: center;
+        color: black;
+        font-family: 'Open Sans', sans-serif
     }
 
     #bar {
