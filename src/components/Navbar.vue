@@ -89,7 +89,6 @@ export default {
     flex:2;
     font-size: 2.5em;
     text-align: center;
-
     margin-top: 0.575em;
     font-family: 'Open Sans', sans-serif;
   }
@@ -103,7 +102,6 @@ export default {
   .dropdown {
     flex:2;
     text-align: center;
-
     font-family: 'Open Sans', sans-serif
   }
 
