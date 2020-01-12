@@ -6,6 +6,7 @@ import Dashboard from '../components/Dashboard'
 import Reports from "../components/Reports";
 import firebase from 'firebase'
 import Admin from "../components/Admin";
+import EmployeeForm from "../components/EmployeeForm";
 
 Vue.use(Router)
 
@@ -44,6 +45,14 @@ const router = new Router({
             path: "/admin",
             name: "Admin",
             component: Admin
+        },
+        {
+            path: "/employeeform",
+            name: "EmployeeForm",
+            component: EmployeeForm,
+            meta: {
+                requiresAuth: true
+            }
         }
 ]
 });
