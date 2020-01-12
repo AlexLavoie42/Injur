@@ -116,6 +116,11 @@ const router = new Router({
             component: ThankyouMessage
         },
         {
+            path: "/loggedin",
+            name: "LoggedIn",
+            component: LoggedIn
+        },
+        {
             path: "/MyAnalytics",
             name: "MyAnalytics",
             component: MyAnalytics
