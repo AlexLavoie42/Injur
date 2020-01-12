@@ -14,28 +14,28 @@
 
         <div id = "left">
             <div class ="button">
-                <img class="image" src="https://dummyimage.com/50x50/000/fff" alt="dummy image">
+                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
             </div>
             <div class ="leftLabelText">
                 Employees
             </div>
 
             <div class ="button">
-                <img class="image" src="https://dummyimage.com/50x50/000/fff" alt="dummy image">
+                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
             </div>
             <div class ="leftLabelText">
                 something1
             </div>
 
             <div class ="button">
-                <img class="image" src="https://dummyimage.com/50x50/000/fff" alt="dummy image">
+                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
             </div>
             <div class ="leftLabelText">
                 something2
             </div>
 
             <div class ="button">
-                <img class="image" src="https://dummyimage.com/50x50/000/fff" alt="dummy image">
+                <img class="image" src="https://image.flaticon.com/icons/png/512/64/64572.png" alt="dummy image">
             </div>
             <div class ="leftLabelText">
                 something3
