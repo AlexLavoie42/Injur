@@ -45,6 +45,7 @@
         font-weight:lighter;
         font-family: 'Open Sans', sans-serif;
         margin-left: .5em;
+        color:white;
 
     }
     .button2 {
