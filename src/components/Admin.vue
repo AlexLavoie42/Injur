@@ -87,6 +87,8 @@
         float: left;
         top: -10px;
         left: -20px;
+        width: 4em;
+        height: 4em;
     }
 
     .leftLabelText {
