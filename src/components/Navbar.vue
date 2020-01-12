@@ -1,7 +1,7 @@
 <template>
   <div class="header">
-    <router-link to="/"><img src="../assets/hat.png" id="hatLogo"></router-link>
-    <h1 id="companyName"> BCIT Construction Co. </h1>
+    <router-link to="/"><img src="../assets/logo.png" id="hatLogo"></router-link>
+    <h1 id="companyName"> Injur </h1>
     <div class="header-right">
       <div class="dropdown">
         <template v-if="user.loggedIn">
