@@ -11,7 +11,7 @@
           </button>
           <div class="dropdown-content">
             <router-link to="dashboard">Account</router-link>
-            <a href="#">Incidents</a>
+            <router-link to="reports">Incidents</router-link>
             <a @click.prevent="signOut">Sign Out</a>
           </div>
         </template>
