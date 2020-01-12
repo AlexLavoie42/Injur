@@ -16,6 +16,7 @@ import IncidentList from "../components/IncidentList";
 import ThankyouMessage from "../components/ThankyouMessage";
 import ManagerView from "../components/ManagerView";
 import store from "../store";
+import LoggedIn from "../components/LoggedIn";
 
 Vue.use(Router)
 
@@ -112,6 +113,11 @@ const router = new Router({
             path: "/thankyou",
             name: "ThankYou",
             component: ThankyouMessage
+        },
+        {
+            path: "/LoggedIn",
+            name: "LoggedIn",
+            component: LoggedIn
         }
 ]
 });
