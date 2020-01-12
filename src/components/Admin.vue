@@ -212,10 +212,21 @@
         transition: 0s
     }
     .button3 {
+        border-radius: 4px;
         background-color: #618fe0;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        margin: 5px;
         position: relative;
         cursor: pointer;
     }
+
+
 
     .button3 span {
         cursor: pointer;
