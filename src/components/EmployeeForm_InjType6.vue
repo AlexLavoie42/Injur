@@ -18,7 +18,7 @@
                     <label for="c3">Major crush injuries</label>
                     <br>
                     <input type="checkbox" id="c4" v-model="toggle">
-                    <label for="c4">Major cut with sever bleeding</label>
+                    <label for="c4">Major cut with severe bleeding</label>
                     <br>
                     <input type="checkbox" id="c5" v-model="toggle">
                     <label for="c5">Amputation of arm, leg, or large part of hand or foot</label>
@@ -92,6 +92,6 @@
 </script>
 
 <style>
-    .form-control{
+    .form-control: {
         width: 400px;
     }

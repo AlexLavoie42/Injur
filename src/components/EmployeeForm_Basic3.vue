@@ -38,6 +38,8 @@
 </template>
 <script>
 
+    import {db} from "../main";
+
     export default {
         name: "App",
 
@@ -60,7 +62,8 @@
                 const data = {
                     basicInfo: this.basicInfo
                 }
-                alert(JSON.stringify(data, null, 2))
+                db.collection("reports").add(data);
+                this.$router.replace("EmployeeForm_type")
             }
         }
     };

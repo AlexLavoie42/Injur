@@ -70,10 +70,11 @@
         methods: {
 
             submit () {
-                const data = {
-                    injuredPersons: this.injuredPersons
-                }
-                alert(JSON.stringify(data, null, 2))
+                // const data = {
+                //     injuredPersons: this.injuredPersons
+                // }
+                //db.collection("reports").add(data);
+                this.$router.replace("EmployeeForm_adv")
             }
         }
     };

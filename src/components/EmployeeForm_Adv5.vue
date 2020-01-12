@@ -35,6 +35,8 @@
 </template>
 <script>
 
+    import {db} from "../main";
+
     export default {
         name: "App",
 
@@ -52,9 +54,10 @@
 
             submit () {
                 const data = {
-                    injuredPersons: this.injuredPersons
+                    incidentInfo: this.incidentInfo
                 }
-                alert(JSON.stringify(data, null, 2))
+                db.collection("reports").add(data);
+                this.$router.replace("EmployeeForm_inj")
             }
         }
     };

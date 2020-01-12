@@ -1,3 +1,5 @@
+import Chart from 'Chart.js'
+
 <template>
   <div>
     <navbar></navbar>
