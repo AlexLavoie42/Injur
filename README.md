@@ -1,4 +1,4 @@
-# vue-firebase-auth
+# Injur
 
 ## Project setup
 ```
