@@ -44,6 +44,9 @@
                   <button type="submit" class="btn btn-primary">Login</button>
                 </div>
               </div>
+              <h3>Demo Account:</h3>
+              <h5>Username: demo@demoaccount.com</h5>
+              <h5>Password: password</h5>
             </form>
           </div>
         </div>
