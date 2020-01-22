@@ -84,8 +84,14 @@
 <script>
 import firebase from "firebase";
 import {db} from "../main";
+import {mapGetters} from "vuex";
 
-export default {
+export default {computed: {
+    // map `this.user` to `this.$store.getters.user`
+    ...mapGetters({
+      user: "user"
+    })
+  },
   data() {
     return {
       form: {
